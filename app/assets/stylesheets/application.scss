@@ -11,3 +11,97 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url("bar.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.card-title {
+  color: white;
+  text-decoration: none;
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.card h4 {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.navbar-lewagon {
+  background-color: transparent;
+  transition: 0.5s background-color ease;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.navbar-lewagon-white {
+  background-color: white;
+}
+
+.navbar-brand {
+  background-color: transparent !important;
+}
+
+.navbar-brand img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background-color: transparent !important;
+}
+
+.row {
+  display: flex;
+  justify-content: center
+}
+
+.card {
+  width: 100%;
+  position: relative;
+  margin: 0.5rem 1rem 1rem 1rem;
+  background-color: transparent;
+  border-radius: 2px;
+  color: white;
+  border: 1px groove white;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.cocktail-name {
+  height: 30%;
+  color: white;
+}
+
+.box .info {
+  background-color: white;
+  flex: 1 1 auto;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  .ingredients {
+
+  }
+  .description {
+
+  }
+}
+

@@ -12,7 +12,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <%= render 'shared/navbar' %>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="/">Ben's Cocktails</a>
       <div class="collapse navbar-collapse">
         <form class="form-inline">
@@ -21,7 +22,7 @@
         </form>
         <a class="btn btn-outline-primary my-2 my-sm-0 ml-2" href="/cocktails/new">New Cocktail</a>
       </div>
-    </nav>
+    </nav> -->
     <%= yield %>
   </body>
 </html>
