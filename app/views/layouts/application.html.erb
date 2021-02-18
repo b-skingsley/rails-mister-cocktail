@@ -12,6 +12,16 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Ben's Cocktails</a>
+      <div class="collapse navbar-collapse">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <a class="btn btn-outline-primary my-2 my-sm-0 ml-2" href="/cocktails/new">New Cocktail</a>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
