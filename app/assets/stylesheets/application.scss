@@ -23,6 +23,10 @@ body {
   background-attachment: fixed;
   text-align: center;
   padding-top: 20vh;
+  color: white;
+  a {
+    color: white;
+  }
 }
 
 .card-title {
@@ -97,11 +101,19 @@ body {
 .info {
   display: flex;
   justify-content: space-around;
+  color: black;
+  a {
+    color: blue;
+  }
   .ingredients {
-
+    flex-basis: 50%;
+    padding: 10px 50px 10px 50px;
+    text-align: left;
   }
   .description {
-
+    flex-basis: 50%;
+    padding: 10px 50px 10px 50px;
+    text-align: left;
   }
 }
 
