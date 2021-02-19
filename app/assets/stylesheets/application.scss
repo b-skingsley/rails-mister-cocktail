@@ -33,7 +33,20 @@ body {
   color: white;
   text-decoration: none;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.card {
+  width: 100%;
+  position: relative;
+  margin: 0.5rem 1rem 1rem 1rem;
+  background-position: center;
+  border-radius: 2px;
+  color: white;
+  border: 1px groove white;
+  height: 250px;
 }
 
 .card h4 {
@@ -41,9 +54,16 @@ body {
   padding: 0.5rem;
 }
 
+.card-body > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .navbar-lewagon {
   background-color: transparent;
   transition: 0.5s background-color ease;
+  height: 70px;
 }
 
 .nav-link {
@@ -63,38 +83,56 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 100%;
+  height: 60px;
   background-color: transparent !important;
+  background-size: cover;
 }
 
 .row {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
-.card {
-  width: 100%;
-  position: relative;
-  margin: 0.5rem 1rem 1rem 1rem;
-  background-color: transparent;
-  border-radius: 2px;
-  color: white;
-  border: 1px groove white;
-}
 
 .box {
   display: flex;
   flex-flow: column;
+  position: fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
   height: 100%;
 }
 
-.cocktail-name {
-  height: 30%;
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 50%;
+}
+
+.banner h1 {
+  margin: 0;
   color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .box .info {
-  background-color: white;
+  background-color: #f8f8ff;
   flex: 1 1 auto;
 }
 

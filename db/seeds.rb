@@ -9,6 +9,13 @@
 require 'open-uri'
 require 'json'
 
+Dose.destroy_all
+Ingredient.destroy_all
+Cocktail.destroy_all
+
+
+puts "old data destroyed"
+
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 user_serialized = URI.open(url).read
 ingredients = JSON.parse(user_serialized)
@@ -17,4 +24,24 @@ ingredients["drinks"].each do |i|
   Ingredient.create!(name:i["strIngredient1"])
 end
 
-print Ingredient.count
+puts Ingredient.count
+
+mojito = Cocktail.create!(
+  name: "Mojito",
+  description: "Mojito is a traditional Cuban highball. The cocktail often consists of five ingredients: white rum, sugar, lime juice, soda water, and mint. Its combination of sweetness, citrus, and herbaceous mint flavours is intended to complement the rum, and has made the mojito a popular summer drink."
+)
+
+caipirinha = Cocktail.create!(
+  name: "Caipirinha",
+  description: "Caipirinha is Brazil's national cocktail, made with cachaça, sugar, and lime. The drink is prepared by mixing the fruit and the sugar together, then adding the liquor. This can be made in a single large glass to be shared among people, or in a larger jar, from which it is served in individual glasses"
+)
+
+margarita = Cocktail.create!(
+  name: "Margarita",
+  description: "A margarita is a cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass. The drink is served shaken with ice, blended with ice, or without ice."
+)
+
+# file = URI.open("https://res.cloudinary.com/dulux1gye/image/upload/v1613738528/gaiijmnyhlrglbv64qkv.jpg")
+# mojito.photo.attach(io: file, filename: 'mojito.jpg', content_type: 'image/jpg')
+
+puts Cocktail.all

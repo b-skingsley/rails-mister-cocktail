@@ -1,8 +1,9 @@
 <div class="box">
-  <div class="cocktail-name">
-    <h1><%= @cocktail.name %></h1>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key %>')">
+    <div class="cocktail-name">
+      <h1><%= @cocktail.name %></h1>
+    </div>
   </div>
-
   <div class="info">
     <div class="description">
       <h3>Description</h3>
