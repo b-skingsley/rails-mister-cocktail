@@ -21,8 +21,8 @@ body {
   background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), image-url("bar.jpg");
   background-size: cover;
   background-attachment: fixed;
-  text-align: center;
   padding-top: 20vh;
+  font-family: 'Roboto', sans-serif;
   color: white;
   a {
     color: white;
@@ -35,7 +35,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Dancing Script', cursive;
-  font-size: 30px;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .card {
@@ -64,10 +67,13 @@ body {
   background-color: transparent;
   transition: 0.5s background-color ease;
   height: 70px;
+  justify-content: space-between;
 }
 
 .nav-link {
   color: white !important;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
 }
 
 .navbar-lewagon-white {
@@ -122,14 +128,9 @@ body {
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
   font-size: 70px;
+  text-align: center;
 }
 
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
 
 .box .info {
   background-color: #f8f8ff;
@@ -140,6 +141,10 @@ body {
   display: flex;
   justify-content: space-around;
   color: black;
+  font-weight: 100;
+  h3 {
+    font-family: 'Roboto', sans-serif;
+  }
   a {
     color: blue;
   }
