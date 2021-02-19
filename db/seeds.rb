@@ -41,7 +41,13 @@ margarita = Cocktail.create!(
   description: "A margarita is a cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass. The drink is served shaken with ice, blended with ice, or without ice."
 )
 
-# file = URI.open("https://res.cloudinary.com/dulux1gye/image/upload/v1613738528/gaiijmnyhlrglbv64qkv.jpg")
-# mojito.photo.attach(io: file, filename: 'mojito.jpg', content_type: 'image/jpg')
+file = URI.open("https://source.unsplash.com/random")
+mojito.photo.attach(io: file, filename: 'mojito.jpg', content_type: 'image/jpg')
+
+file = URI.open("https://source.unsplash.com/random")
+caipirinha.photo.attach(io: file, filename: 'mojito.jpg', content_type: 'image/jpg')
+
+file = URI.open("https://source.unsplash.com/random")
+margarita.photo.attach(io: file, filename: 'mojito.jpg', content_type: 'image/jpg')
 
 puts Cocktail.all
