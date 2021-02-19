@@ -97,6 +97,7 @@ body {
 .row {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 
@@ -118,7 +119,7 @@ body {
   background-size: cover;
   background-position: center;
   padding: 150px 0;
-  height: 50%;
+  height: 60%;
 }
 
 .banner h1 {
