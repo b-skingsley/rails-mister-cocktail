@@ -44,7 +44,7 @@ body {
 .card {
   width: 100%;
   position: relative;
-  margin: 0.5rem 1rem 1rem 1rem;
+  margin: 0.5rem 1rem 2rem 1rem;
   background-position: center;
   border-radius: 2px;
   color: white;
@@ -96,7 +96,6 @@ body {
 
 .row {
   display: flex;
-  justify-content: center;
   width: 100%;
 }
 
@@ -117,7 +116,7 @@ body {
 
 .banner {
   background-size: cover;
-  background-position: center;
+  background-position: 50% 40%;
   padding: 150px 0;
   height: 60%;
 }
